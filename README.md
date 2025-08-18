@@ -23,7 +23,7 @@ Upon exit, the duration between exit and entry times is calculated.
 A parking fee is charged according to this duration.
 
 # Usage
-The program prompts the user to input vehicle information.  
-The system checks the current parking lot status.  
-For each vehicle, the user inputs the properties  
-For exiting vehicles, fees are displayed.  
+-The program prompts the user to input vehicle information.  
+-The system checks the current parking lot status.  
+-For each vehicle, the user inputs the properties  
+-For exiting vehicles, fees are displayed.  
