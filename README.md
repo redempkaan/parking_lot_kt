@@ -4,21 +4,21 @@ This project simulates a simple console-based parking lot management system. The
 
 # Features
 
- **1)Vehicle Entry:**
+ **1) Vehicle Entry:**
 Users can add N different vehicles through the entry gate.
 Each vehicle requires license plate and entry time information.
 
-**2)Parking Capacity:**
+**2) Parking Capacity:**
 The parking lot has 4 vehicle slots in total.
 No new vehicles are allowed if the parking lot is full.
 
-**3)Vehicle Tracking:**
+**3) Vehicle Tracking:**
 The system checks whether a vehicle is already inside based on its license plate.
 If a vehicle returns:
 **Inside** → it will exit, and exit time is recorded.
 **Outside** → it will enter, and entry time is recorded.
 
-**Fee Calculation:**
+**4) Fee Calculation:**
 Upon exit, the duration between exit and entry times is calculated.
 A parking fee is charged according to this duration.
 
