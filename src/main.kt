@@ -6,6 +6,14 @@ fun main(){
     var tokens : List<String>
     var key = 'c'
     val lot1 = ParkingLot("Burakcan Sezgin", 4, 100)
+    val car_shape = """
+          ______
+         /|_||_\`.__
+        (   _    _ _\
+        =`-(_)--(_)-'
+    """.trimIndent()
+
+    println(car_shape)
 
     println("Welcome to Fups Mobile parking lot, I am manager ${lot1.manager}\n")
 
