@@ -14,16 +14,19 @@ No new vehicles are allowed if the parking lot is full.
 
 **3) Vehicle Tracking:**
 The system checks whether a vehicle is already inside based on its license plate.
-If a vehicle returns:
-**Inside** → it will exit, and exit time is recorded.
-**Outside** → it will enter, and entry time is recorded.
 
-**4) Fee Calculation:**
+If a vehicle returns:  
+**Inside** → it will exit, and exit time is randomized between import time and 24  
+**Outside** → it will enter, and entry time is recorded.  
+
+**4) Fuel Type Check:**
+Vehicles that use LPG as fuel are not allowed as they may cause problems in indoor areas.
+
+**5) Fee Calculation:**
 Upon exit, the duration between exit and entry times is calculated.
 A parking fee is charged according to this duration.
 
 # Usage
-- The program prompts the user to input vehicle information.  
-- The system checks the current parking lot status.  
-- For each vehicle, the user inputs the properties  
+- The program prompts the user to input vehicle information(plate, height, width, fuel type, import time).  
+- The system checks the current parking lot status.
 - For exiting vehicles, fees are displayed.  
