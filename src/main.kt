@@ -20,25 +20,25 @@ fun main(){
     //Checking a key variable to provide constant console activity of the app; if key is not 'q', continue
     while(key != 'q') {
 
-        println("Enter the properties of the car by seperating with single space as:\n plate height width fuelType importTime(hour)\n")
+        println("Enter the properties of the car by seperating with single space as:\n plate importTime(hour)\n")
 
         //If input is null, assign the given string to avoid exceptions
 
-        input = readln() ?: "error error"
+        input = readln() ?: "e"
         tokens = input.split(" ")
 
-        //Checking given property count for car object
+        //Checking given property count for the car object
 
-        if(tokens.size != 5){
+        if(tokens.size != 2){
             println("Check your input and try again")
             return
             }
 
-        val (plate, height, width, fuelType, importTime) = tokens
+        val (plate, importTime) = tokens
 
         //Creating the car object
 
-        val car2 = Car(plate, height.toInt(), width.toInt(), fuelType, importTime.toInt())
+        val car2 = Car(plate, importTime.toInt())
 
         //Checking if the car with the given plate is inside the lot
 
@@ -47,7 +47,7 @@ fun main(){
         }
         //If not, check lot conditions and decide whether the car will be allowed or not
 
-        else if ((car2.fuelType.lowercase() != "lpg") && lot1.emptyAreas != 0) {
+        else if (lot1.emptyAreas != 0) {
             lot1.importVehicle(car2)
         }
         else {
@@ -55,7 +55,7 @@ fun main(){
         }
 
         println("Empty spaces: ${lot1.emptyAreas}")
-        println("Is there anything I can do for you? If so, press anything other than 'q'")
+        println("\nIs there anything I can do for you? If so, press anything other than 'q'")
 
         input = readln()
 
