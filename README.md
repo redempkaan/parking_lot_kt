@@ -16,7 +16,7 @@ No new vehicles are allowed if the parking lot is full.
 The system checks whether a vehicle is already inside based on its license plate.
 
 If a vehicle returns:  
-**Inside** → it will exit, and exit time is randomized between import time and 24  
+**Inside** → it will exit, and exit time is recorded. 
 **Outside** → it will enter, and entry time is recorded.
 
 **4) Fee Calculation:**
@@ -24,6 +24,6 @@ Upon exit, the duration between exit and entry times is calculated.
 A parking fee is charged according to this duration.
 
 # Usage
-- The program prompts the user to input vehicle information(plate, import time).  
+- The program prompts the user to input vehicle plate. 
 - The system checks the current parking lot status.
 - For exiting vehicles, fees are displayed.  
