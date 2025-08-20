@@ -1,6 +1,0 @@
-[IN] plate: 27pt111 time: 2025-08-20 15:45
-[IN] plate: 26pt111 time: 2025-08-20 15:46
-[OUT] plate: 27pt111 time: 2025-08-20 15:46, fee: 800
-[IN] plate: 27pt111 time: 2025-08-20 15:52
-[IN] plate: 56pt455 time: 2025-08-20 15:52
-[OUT] plate: 27pt111 time: 2025-08-20 15:52, fee: 1100
