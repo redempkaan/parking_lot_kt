@@ -4,10 +4,10 @@ import java.time.Duration
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-//Calculating time passed between two dates in minutes
+//Calculating time passed between two dates in seconds
 
-fun LocalDateTime.passedMins(secondDate: LocalDateTime?): Long{
-    return Duration.between(this, secondDate).toMinutes()
+fun LocalDateTime.passedSecs(secondDate: LocalDateTime?): Long{
+    return Duration.between(this, secondDate).toSeconds()
 
 }
 

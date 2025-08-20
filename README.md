@@ -23,7 +23,11 @@ If a vehicle returns:
 Upon exit, the duration between exit and entry times is calculated.
 A parking fee is charged according to this duration.
 
+**5) Logging:**  
+Upon entrance and exits, infos are saved in "lotLog.txt" file.
+
 # Usage
 - The program prompts the user to input vehicle plate. 
 - The system checks the current parking lot status.
-- For exiting vehicles, fees are displayed.  
+- If conditions are okay, the vehicle is allowed to enter and entrance informations logged.
+- For exiting vehicles, fees are displayed and exit informations logged.  
