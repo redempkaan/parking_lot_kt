@@ -1,5 +1,6 @@
 import vehicle.Car
 import parking_lot.ParkingLot
+import java.time.LocalDateTime
 
 fun main(){
     var input : String
@@ -20,35 +21,34 @@ fun main(){
     //Checking a key variable to provide constant console activity of the app; if key is not 'q', continue
     while(key != 'q') {
 
-        println("Enter the properties of the car by seperating with single space as:\n plate importTime(hour)\n")
+        println("Enter the plate of the car\n")
 
         //If input is null, assign the given string to avoid exceptions
 
-        input = readln() ?: "e"
-        tokens = input.split(" ")
+         val plate = readln() ?: "e"
 
         //Checking given property count for the car object
 
-        if(tokens.size != 2){
-            println("Check your input and try again")
+        if(plate == "e"){
+            println("Invalid input")
             return
-            }
+        }
 
-        val (plate, importTime) = tokens
 
-        //Creating the car object
-
-        val car2 = Car(plate, importTime.toInt())
+        var car1 = lot1.vehiclesInside.find {it.plate == plate}
 
         //Checking if the car with the given plate is inside the lot
 
-        if (car2.plate in lot1.vehiclesInside) {
-            lot1.exportVehicle(car2)
+        if (car1 != null) {
+            lot1.exportVehicle(car1)
         }
         //If not, check lot conditions and decide whether the car will be allowed or not
 
         else if (lot1.emptyAreas != 0) {
-            lot1.importVehicle(car2)
+            //Creating the car object
+
+            car1 = Car(plate, null, null)
+            lot1.importVehicle(car1)
         }
         else {
             println("Sorry, we cannot accept your car right now")
